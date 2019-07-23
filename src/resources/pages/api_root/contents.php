@@ -46,7 +46,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td>auth</td>
-                                                    <td>Optional</td>
+                                                    <td>False</td>
                                                     <td>Authentication Password used if authentication is required</td>
                                                 </tr>
                                             </tbody>
@@ -84,7 +84,7 @@
                                         <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/</code>
                                         <br/>
 
-                                        <pre>
+<pre>
 {
    "Message":"Unauthorized Request",
    "Status":false,
