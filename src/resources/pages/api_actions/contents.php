@@ -21,13 +21,13 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Sessions Endpoint</h3>
+                                        <h3 class="panel-title">Actions Endpoint</h3>
                                     </div>
                                     <div class="panel-body">
 
                                         <p>
-                                            The sessions endpoint <code>/sessions</code> allows clients to create a
-                                            new session or close an existing one. Both <span class="label label-success">GET</span>
+                                            The actions endpoint <code>/actions</code> allows a client to invoke
+                                            actions to an existing session Both <span class="label label-success">GET</span>
                                             or <span class="label label-danger">POST</span> request methods are allowed
                                         </p>
                                         <br/>
@@ -47,6 +47,11 @@
                                                     <td>False</td>
                                                     <td>Authentication Password used if authentication is required</td>
                                                 </tr>
+                                                <tr>
+                                                    <td>session_id</td>
+                                                    <td>True</td>
+                                                    <td>The ID of the session to manipulate</td>
+                                                </tr>
                                             </tbody>
                                         </table>
 
@@ -61,100 +66,17 @@
    "ResponseCode":401
 }
 </pre>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Create a new Session</h3>
-                                    </div>
-                                    <div class="panel-body">
-
-                                        <p>
-                                            <code>/sessions/create</code> allows you to create a new session, you can
-                                            provide a optional proxy configuration or specify the target browser you
-                                            want to use. When you create a new session you will be given a Session ID
-                                            which is required for many other methods
-                                        </p>
-                                        <br/>
-
-                                        <h4>Parameters</h4>
-                                        <table class="table table-hover table-responsive" style="display: block;">
-                                            <thead>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>Required</th>
-                                                    <th>Description</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>target_browser</td>
-                                                    <td>False</td>
-                                                    <td>
-                                                        Specify the target browser to use, the available options are
-                                                        <code>chrome</code>, <code>firefox</code> and <code>opera</code>. If
-                                                        no option is provided, the server will use the default browser which
-                                                        is recommended.
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>proxy_host</td>
-                                                    <td>False</td>
-                                                    <td>
-                                                        The host of the proxy if you wish to use a proxy configuration
-                                                        for this session, eg; <code>8.8.8.8</code>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>proxy_port</td>
-                                                    <td>True if <code>proxy_host</code> is provided</td>
-                                                    <td>
-                                                        The port of the given proxy, eg; <code>8080</code>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>proxy_scheme</td>
-                                                    <td>True if <code>proxy_host</code> is provided</td>
-                                                    <td>
-                                                        The scheme to use for this proxy, the available options are
-                                                        <code>http</code> or <code>https</code>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>proxy_username</td>
-                                                    <td>False</td>
-                                                    <td>
-                                                        If authentication is required to connect, it can be provided
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>proxy_password</td>
-                                                    <td>True if <code>proxy_username</code> is provided</td>
-                                                    <td>
-                                                        The password required to complete the authentication
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
                                         <hr/>
-                                        <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/sessions/create?target_browser=chrome</code>
+                                        <h4>Session Not Found Response</h4>
                                         <br/>
 
 <pre>
 {
-   "Status":true,
-   "ResponseCode":200,
-   "SessionId":"L14KII5WLAAJ29GQOJJIBX6LT2S5MPX1"
+   "Status":false,
+   "ResponseCode":404,
+    "Message":"The session 'SESSION_ID' was not found"
 }
 </pre>
-
                                     </div>
                                 </div>
                             </div>
@@ -163,13 +85,12 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Close Session</h3>
+                                        <h3 class="panel-title">Get Elements</h3>
                                     </div>
                                     <div class="panel-body">
 
                                         <p>
-                                            <code>/sessions/close</code> allows you to close an existing session, this
-                                            closes the browser and web driver.
+                                            <code>/actions/get_elements</code> Fetches the elements that are in the DOM
                                         </p>
                                         <br/>
 
@@ -184,16 +105,95 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>session_id</td>
+                                                    <td>by</td>
                                                     <td>True</td>
-                                                    <td>The ID of the session to close</td>
+                                                    <td>
+                                                        Specify how you want to search for elements, the possible options
+                                                        are <code>class_name</code>, <code>css_selector</code>,
+                                                        <code>id</code>, <code>name</code>, <code>tag_name</code>,
+                                                        <code>xpath</code>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>value</td>
+                                                    <td>True</td>
+                                                    <td>
+                                                        The value to search for corresponding to the <code>by</code>
+                                                        paramerter
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
 
                                         <hr/>
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/sessions/close?session_id=L14KII5WLAAJ29GQOJJIBX6LT2S5MPX1</code>
+                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/actions/get_elements?session_id=ExampleID&by=tag_name&value=a</code>
+                                        <br/>
+
+<pre>
+{
+   "Elements":[
+      {
+         "Enabled":true,
+         "IsSelected":false,
+         "ElementLocation":{
+            "X":1615,
+            "Y":19
+         },
+         "ElementSize":{
+            "Width":34,
+            "Height":24
+         },
+         "TagName":"a",
+         "InnerText":"Gmail",
+         "InnerHtml":"Gmail"
+      },
+      {
+         "Enabled":true,
+         "IsSelected":false,
+         "ElementLocation":{
+            "X":1664,
+            "Y":19
+         },
+         "ElementSize":{
+            "Width":57,
+            "Height":24
+         },
+         "TagName":"a",
+         "InnerText":"Images",
+         "InnerHtml":"Images"
+      }
+   ],
+   "Status":true,
+   "ResponseCode":200
+}
+</pre>
+                                        <p>
+                                            This response will return an array of <a href="/object_element">Web Elements</a>
+                                            if there are no results, then the array will be empty.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Close Window</h3>
+                                    </div>
+                                    <div class="panel-body">
+
+                                        <p>
+                                            <code>/actions/close</code> closes the current window/tab that the
+                                            session is currently focused on and switches back to another active
+                                            window/tab
+                                        </p>
+                                        <br/>
+
+                                        <hr/>
+                                        <h4>Example Success Response</h4>
+                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/actions/close?session_id=ExampleID</code>
                                         <br/>
 
 <pre>
@@ -202,20 +202,72 @@
    "ResponseCode":200
 }
 </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Execute Javascript</h3>
+                                    </div>
+                                    <div class="panel-body">
+
+                                        <p>
+                                            <code>/actions/execute_javascript</code> takes your javascript code and
+                                            executes it in the current window, if your code has a return statement then
+                                            the results will also be returned
+                                        </p>
+                                        <br/>
+
+                                        <h4>Parameters</h4>
+                                        <table class="table table-hover table-responsive" style="display: block;">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Required</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>code</td>
+                                                    <td>True</td>
+                                                    <td>
+                                                        The Javascript code you wish to execute, if it contains a return
+                                                        statement then the results will be returned in the response
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
 
                                         <hr/>
-                                        <h4>Response given if the session was not found</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/sessions/close?session_id=VFHXLB6O52QWH3UAZU089TIFDSUWL41L</code>
+                                        <h4>Example Success Response</h4>
+                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/actions/execute_javascript?session_id=ExampleID&code=return%20%27test%27;</code>
                                         <br/>
 
 <pre>
 {
-   "Message":"The session 'VFHXLB6O52QWH3UAZU089TIFDSUWL41L' was not found",
-   "Status":false,
-   "ResponseCode":404
+   "Status":true,
+   "ResponseCode":200,
+   "Output": "test"
 }
 </pre>
 
+                                        <hr/>
+                                        <h4>Example Error Response</h4>
+                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/actions/execute_javascript?session_id=ExampleID&code=return%20%27%27%27</code>
+                                        <br/>
+
+<pre>
+{
+   "Status":false,
+   "ResponseCode":500,
+   "Error": "SyntaxError: Invalid or unexpected token"
+}
+</pre>
                                     </div>
                                 </div>
                             </div>

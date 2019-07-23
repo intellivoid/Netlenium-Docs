@@ -35,7 +35,7 @@
                                         <br/>
 
                                         <h4>Parameters</h4>
-                                        <table class="table table-hover">
+                                        <table class="table table-hover table-responsive">
                                             <thead>
                                                 <tr>
                                                     <th>Name</th>
