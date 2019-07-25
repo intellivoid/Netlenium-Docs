@@ -5,7 +5,7 @@
 <html lang="en">
 
     <head>
-        <title>Netlenium - API Usage '/sessions'</title>
+        <title>Netlenium - API Usage '/actions'</title>
         <?PHP HTML::importSection('header'); ?>
     </head>
 
@@ -22,16 +22,16 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">Actions Endpoint</h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
+                                            The actions endpoint <code>/actions</code> allows a client to invoke
+                                            actions to an existing session.
+                                        </p>
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
                                     </div>
                                     <div class="panel-body">
-
-                                        <p>
-                                            The actions endpoint <code>/actions</code> allows a client to invoke
-                                            actions to an existing session Both <span class="label label-success">GET</span>
-                                            or <span class="label label-danger">POST</span> request methods are allowed
-                                        </p>
-                                        <br/>
-
                                         <h4>Parameters</h4>
                                         <table class="table table-hover table-responsive">
                                             <thead>
@@ -78,6 +78,11 @@
 }
 </pre>
                                     </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -85,15 +90,20 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Get Elements</h3>
-                                    </div>
-                                    <div class="panel-body">
-
-                                        <p>
+                                        <h3 class="panel-title">
+                                            Get Elements
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
                                             <code>/actions/get_elements</code> Fetches the elements that are in the DOM
                                         </p>
-                                        <br/>
-
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
                                         <h4>Parameters</h4>
                                         <table class="table table-hover table-responsive" style="display: block;">
                                             <thead>
@@ -169,9 +179,14 @@
 }
 </pre>
                                         <p>
-                                            This response will return an array of <a href="/object_element">Web Elements</a>
+                                            This response will return an array of <a href="/object_element">Web Elements</a>.
                                             if there are no results, then the array will be empty.
                                         </p>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
@@ -180,18 +195,22 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Close Window</h3>
-                                    </div>
-                                    <div class="panel-body">
-
-                                        <p>
+                                        <h3 class="panel-title">
+                                            Close Windows
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
                                             <code>/actions/close</code> closes the current window/tab that the
                                             session is currently focused on and switches back to another active
                                             window/tab
                                         </p>
-                                        <br/>
-
-                                        <hr/>
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
                                         <h4>Example Success Response</h4>
                                         <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/actions/close?session_id=ExampleID</code>
                                         <br/>
@@ -203,6 +222,11 @@
 }
 </pre>
                                     </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -211,17 +235,22 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Execute Javascript</h3>
-                                    </div>
-                                    <div class="panel-body">
-
-                                        <p>
+                                        <h3 class="panel-title">
+                                            Execute Javascript
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
                                             <code>/actions/execute_javascript</code> takes your javascript code and
                                             executes it in the current window, if your code has a return statement then
                                             the results will also be returned
                                         </p>
-                                        <br/>
-
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
                                         <h4>Parameters</h4>
                                         <table class="table table-hover table-responsive" style="display: block;">
                                             <thead>
@@ -268,6 +297,11 @@
    "Error": "SyntaxError: Invalid or unexpected token"
 }
 </pre>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
