@@ -14,7 +14,6 @@
             <?PHP HTML::importSection('navbar'); ?>
             <?PHP HTML::importSection('sidebar'); ?>
             <div class="main">
-                <!-- MAIN CONTENT -->
                 <div class="main-content">
                     <div class="container-fluid">
                         <div class="row">
@@ -22,16 +21,16 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">Navigation Endpoint</h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
+                                            The navigation endpoint <code>/navigation</code> allows clients to manipulate
+                                            the current session's navigation.
+                                        </p>
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
                                     </div>
                                     <div class="panel-body">
-
-                                        <p>
-                                            The navigation endpoint <code>/navigation</code> allows clients to manipulate
-                                            the current session's navigation. Both <span class="label label-success">GET</span>
-                                            or <span class="label label-danger">POST</span> request methods are allowed
-                                        </p>
-                                        <br/>
-
                                         <h4>Parameters</h4>
                                         <table class="table table-hover table-responsive">
                                             <thead>
@@ -78,6 +77,11 @@
 }
 </pre>
                                     </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -85,16 +89,21 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Load URL</h3>
-                                    </div>
-                                    <div class="panel-body">
-
-                                        <p>
+                                        <h3 class="panel-title">
+                                            Load URL
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
                                             <code>/navigation/load_url</code> invokes the browser to navigate to the given
                                             URL, once completed a request would be returned back
                                         </p>
-                                        <br/>
-
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
                                         <h4>Parameters</h4>
                                         <table class="table table-hover table-responsive">
                                             <thead>
@@ -126,6 +135,11 @@
 </pre>
 
                                     </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -133,15 +147,20 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Go Back</h3>
-                                    </div>
-                                    <div class="panel-body">
-
-                                        <p>
+                                        <h3 class="panel-title">
+                                            Go Back
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
                                             <code>/navigation/go_back</code> Goes back one page in the history.
                                         </p>
-                                        <br/>
-
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
                                         <h4>Example Success Response</h4>
                                         <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/navigation/go_back?session_id=ExampleID</code>
                                         <br/>
@@ -153,6 +172,11 @@
 }
 </pre>
                                     </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -160,15 +184,20 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Go Forward</h3>
-                                    </div>
-                                    <div class="panel-body">
-
-                                        <p>
+                                        <h3 class="panel-title">
+                                            Go Forward
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
                                             <code>/navigation/go_forward</code> Goes forward one page in the history.
                                         </p>
-                                        <br/>
-
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
                                         <h4>Example Success Response</h4>
                                         <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/navigation/go_forward?session_id=ExampleID</code>
                                         <br/>
@@ -180,6 +209,11 @@
 }
 </pre>
                                     </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -187,15 +221,20 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Reload</h3>
-                                    </div>
-                                    <div class="panel-body">
-
-                                        <p>
+                                        <h3 class="panel-title">
+                                            Reload
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
                                             <code>/navigation/reload</code> Reloads the current page.
                                         </p>
-                                        <br/>
-
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
                                         <h4>Example Success Response</h4>
                                         <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/navigation/reload?session_id=ExampleID</code>
                                         <br/>
@@ -207,13 +246,17 @@
 }
 </pre>
                                     </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- END MAIN -->
             <div class="clearfix"></div>
             <?PHP HTML::importSection('footer'); ?>
         </div>
