@@ -52,7 +52,7 @@
 
                                         <hr/>
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/</code>
                                         <br/>
 
 <pre>
@@ -79,7 +79,7 @@
 
                                         <hr/>
                                         <h4>Authentication Required Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/</code>
                                         <br/>
 
 <pre>

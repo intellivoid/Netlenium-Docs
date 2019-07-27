@@ -95,7 +95,7 @@
                                     </div>
                                     <div class="panel-body">
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/admin/active_sessions</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/admin/active_sessions</code>
                                         <br/>
 
 <pre>

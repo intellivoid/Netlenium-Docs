@@ -154,7 +154,7 @@
 
                                         <hr/>
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/sessions/create?target_browser=chrome</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/sessions/create?target_browser=chrome</code>
                                         <br/>
 
 <pre>
@@ -213,7 +213,7 @@
 
                                         <hr/>
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/sessions/close?session_id=L14KII5WLAAJ29GQOJJIBX6LT2S5MPX1</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/sessions/close?session_id=L14KII5WLAAJ29GQOJJIBX6LT2S5MPX1</code>
                                         <br/>
 
 <pre>
@@ -225,7 +225,7 @@
 
                                         <hr/>
                                         <h4>Response given if the session was not found</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/sessions/close?session_id=VFHXLB6O52QWH3UAZU089TIFDSUWL41L</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/sessions/close?session_id=VFHXLB6O52QWH3UAZU089TIFDSUWL41L</code>
                                         <br/>
 
 <pre>

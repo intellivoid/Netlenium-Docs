@@ -141,7 +141,7 @@
                                     </div>
                                     <div class="panel-body">
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/web_element/clear?session_id=ExampleID&by=name&value=input_element</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/web_element/clear?session_id=ExampleID&by=name&value=input_element</code>
                                         <br/>
 
 <pre>
@@ -180,7 +180,7 @@
                                     </div>
                                     <div class="panel-body">
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/web_element/click?session_id=ExampleID&by=name&value=input_element</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/web_element/click?session_id=ExampleID&by=name&value=input_element</code>
                                         <br/>
 
 <pre>
@@ -219,7 +219,7 @@
                                     </div>
                                     <div class="panel-body">
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/web_element/move_to?session_id=ExampleID&by=name&value=input_element</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/web_element/move_to?session_id=ExampleID&by=name&value=input_element</code>
                                         <br/>
 <pre>
 {
@@ -276,7 +276,7 @@
                                         </table>
 
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/web_element/get_attribute?session_id=ExampleID&by=tag_name&value=input&index=0&attribute_name=class</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/web_element/get_attribute?session_id=ExampleID&by=tag_name&value=input&index=0&attribute_name=class</code>
                                         <br/>
 
 <pre>
@@ -288,7 +288,7 @@
 </pre>
                                         <hr/>
                                         <h4>Attribute Not Found Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/web_element/get_attribute?session_id=ExampleID&by=tag_name&value=input&index=0&attribute_name=dfg</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/web_element/get_attribute?session_id=ExampleID&by=tag_name&value=input&index=0&attribute_name=dfg</code>
                                         <br/>
 
 <pre>
@@ -352,7 +352,7 @@
                                         </table>
 
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/web_element/get_attribute?session_id=ExampleID&by=tag_name&value=input&index=0&attribute_name=class</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/web_element/get_attribute?session_id=ExampleID&by=tag_name&value=input&index=0&attribute_name=class</code>
                                         <br/>
 
 <pre>

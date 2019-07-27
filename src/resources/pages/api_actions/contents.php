@@ -137,7 +137,7 @@
 
                                         <hr/>
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/actions/get_elements?session_id=ExampleID&by=tag_name&value=a</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/actions/get_elements?session_id=ExampleID&by=tag_name&value=a</code>
                                         <br/>
 
 <pre>
@@ -212,7 +212,7 @@
                                     </div>
                                     <div class="panel-body">
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/actions/close?session_id=ExampleID</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/actions/close?session_id=ExampleID</code>
                                         <br/>
 
 <pre>
@@ -274,7 +274,7 @@
 
                                         <hr/>
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/actions/execute_javascript?session_id=ExampleID&code=return%20%27test%27;</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/actions/execute_javascript?session_id=ExampleID&code=return%20%27test%27;</code>
                                         <br/>
 
 <pre>
@@ -287,7 +287,7 @@
 
                                         <hr/>
                                         <h4>Example Error Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/actions/execute_javascript?session_id=ExampleID&code=return%20%27%27%27</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/actions/execute_javascript?session_id=ExampleID&code=return%20%27%27%27</code>
                                         <br/>
 
 <pre>

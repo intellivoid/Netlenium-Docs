@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9ca04f6-43b8-4710-af98-4e9231b4d9ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/resources/pages/api_admin/contents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/pages/api_actions/contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/pages/api_actions/contents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/pages/api_admin/contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/pages/api_admin/contents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/pages/api_navigation/contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/pages/api_navigation/contents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/pages/api_root/contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/pages/api_root/contents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/pages/api_sessions/contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/pages/api_sessions/contents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/pages/api_web_element/contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/pages/api_web_element/contents.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,28 +18,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/pages/api_root/contents.php">
+        <entry file="file://$PROJECT_DIR$/src/resources/pages/api_actions/contents.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="319">
+              <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/pages/api_web_element/contents.php">
+        <entry file="file://$PROJECT_DIR$/src/resources/pages/api_navigation/contents.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="290" column="210" selection-start-line="290" selection-start-column="210" selection-end-line="290" selection-end-column="210" />
+            <state relative-caret-position="-45">
+              <caret line="238" column="107" selection-start-line="238" selection-start-column="107" selection-end-line="238" selection-end-column="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources/pages/api_root/contents.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-572">
+              <caret line="54" column="107" selection-start-line="54" selection-start-column="107" selection-end-line="54" selection-end-column="107" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/resources/pages/api_web_element/contents.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="143" column="107" selection-start-line="143" selection-start-column="107" selection-end-line="143" selection-end-column="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/resources/pages/api_admin/contents.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
+            <state relative-caret-position="173">
+              <caret line="97" column="107" selection-start-line="97" selection-start-column="107" selection-end-line="97" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -43,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/resources/pages/api_sessions/contents.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="50" column="48" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="50" selection-end-column="48" />
+            <state relative-caret-position="377">
+              <caret line="227" column="107" selection-start-line="227" selection-start-column="107" selection-end-line="227" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -54,6 +76,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>style=&quot;display: block;&quot;</find>
+      <find>127.0.0.1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,13 +93,13 @@
         <option value="$PROJECT_DIR$/src/resources/sections/sidebar.php" />
         <option value="$PROJECT_DIR$/src/resources/markdown/api_usage_root/en.md" />
         <option value="$PROJECT_DIR$/src/resources/sections/navbar.php" />
+        <option value="$PROJECT_DIR$/src/resources/sections/header.php" />
+        <option value="$PROJECT_DIR$/src/resources/pages/api_admin/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/api_actions/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/api_navigation/contents.php" />
-        <option value="$PROJECT_DIR$/src/resources/sections/header.php" />
-        <option value="$PROJECT_DIR$/src/resources/pages/api_sessions/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/api_root/contents.php" />
+        <option value="$PROJECT_DIR$/src/resources/pages/api_sessions/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/api_web_element/contents.php" />
-        <option value="$PROJECT_DIR$/src/resources/pages/api_admin/contents.php" />
       </list>
     </option>
   </component>
@@ -225,12 +248,12 @@
       <workItem from="1563923489216" duration="593000" />
       <workItem from="1563996856627" duration="5532000" />
       <workItem from="1564073766527" duration="2852000" />
-      <workItem from="1564161061656" duration="6607000" />
+      <workItem from="1564161061656" duration="6856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33033000" />
+    <option name="totallyTimeSpent" value="33282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -311,13 +334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/pages/api_actions/contents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="104" column="42" selection-start-line="91" selection-start-column="36" selection-end-line="104" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/sections/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -325,38 +341,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/pages/api_navigation/contents.php">
+    <entry file="file://$PROJECT_DIR$/src/resources/pages/api_actions/contents.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="141" column="42" lean-forward="true" selection-start-line="137" selection-start-column="36" selection-end-line="141" selection-end-column="42" />
+        <state relative-caret-position="319">
+          <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/pages/api_sessions/contents.php">
+    <entry file="file://$PROJECT_DIR$/src/resources/pages/api_navigation/contents.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="50" column="48" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="50" selection-end-column="48" />
+        <state relative-caret-position="-45">
+          <caret line="238" column="107" selection-start-line="238" selection-start-column="107" selection-end-line="238" selection-end-column="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/pages/api_root/contents.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="-572">
+          <caret line="54" column="107" selection-start-line="54" selection-start-column="107" selection-end-line="54" selection-end-column="107" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/pages/api_web_element/contents.php">
+    <entry file="file://$PROJECT_DIR$/src/resources/pages/api_sessions/contents.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="290" column="210" selection-start-line="290" selection-start-column="210" selection-end-line="290" selection-end-column="210" />
+        <state relative-caret-position="377">
+          <caret line="227" column="107" selection-start-line="227" selection-start-column="107" selection-end-line="227" selection-end-column="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/pages/api_admin/contents.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
+        <state relative-caret-position="173">
+          <caret line="97" column="107" selection-start-line="97" selection-start-column="107" selection-end-line="97" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/pages/api_web_element/contents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="143" column="107" selection-start-line="143" selection-start-column="107" selection-end-line="143" selection-end-column="107" />
         </state>
       </provider>
     </entry>

@@ -124,7 +124,7 @@
 
                                         <hr/>
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/navigation/load_url?session_id=ExampleID&url=https%3A%2F%2Fgoogle.com%2F</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/navigation/load_url?session_id=ExampleID&url=https%3A%2F%2Fgoogle.com%2F</code>
                                         <br/>
 
 <pre>
@@ -162,7 +162,7 @@
                                     </div>
                                     <div class="panel-body">
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/navigation/go_back?session_id=ExampleID</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/navigation/go_back?session_id=ExampleID</code>
                                         <br/>
 
 <pre>
@@ -199,7 +199,7 @@
                                     </div>
                                     <div class="panel-body">
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/navigation/go_forward?session_id=ExampleID</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/navigation/go_forward?session_id=ExampleID</code>
                                         <br/>
 
 <pre>
@@ -236,7 +236,7 @@
                                     </div>
                                     <div class="panel-body">
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/navigation/reload?session_id=ExampleID</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/navigation/reload?session_id=ExampleID</code>
                                         <br/>
 
 <pre>
