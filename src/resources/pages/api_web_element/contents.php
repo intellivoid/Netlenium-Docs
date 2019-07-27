@@ -78,7 +78,6 @@
                                             </tbody>
                                         </table>
 
-                                        <hr/>
                                         <h4>Authentication Required Response</h4>
                                         <br/>
 
@@ -258,8 +257,102 @@
                                         </div>
                                     </div>
                                     <div class="panel-body">
+                                        <h4>Parameters</h4>
+                                        <table class="table table-hover table-responsive">
+                                            <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Required</th>
+                                                <th>Description</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>attribute_name</td>
+                                                <td>True</td>
+                                                <td>The name of the attribute within this element.</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/web_element/move_to?session_id=ExampleID&by=name&value=input_element</code>
+                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/web_element/get_attribute?session_id=ExampleID&by=tag_name&value=input&index=0&attribute_name=class</code>
+                                        <br/>
+
+<pre>
+{
+   "Status":true,
+   "ResponseCode":200,
+   "AttributeValue":"form-input"
+}
+</pre>
+                                        <hr/>
+                                        <h4>Attribute Not Found Response</h4>
+                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/web_element/get_attribute?session_id=ExampleID&by=tag_name&value=input&index=0&attribute_name=dfg</code>
+                                        <br/>
+
+<pre>
+{
+   "Status":false,
+   "ResponseCode":404,
+   "Message":"The attribute 'dfg' was not found in the element"
+}
+</pre>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            Set Attribute
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
+                                            <code>/web_element/set_attribute</code> gets the value of the element's
+                                            attribute
+                                        </p>
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>Parameters</h4>
+                                        <table class="table table-hover table-responsive">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Required</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>attribute_name</td>
+                                                    <td>True</td>
+                                                    <td>The name of the attribute within this element.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>attribute_value</td>
+                                                    <td>True</td>
+                                                    <td>The value to set to the given attribute/td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <h4>Example Success Response</h4>
+                                        <span class="label label-success">GET</span> <code>http://127.0.0.1:6410/web_element/get_attribute?session_id=ExampleID&by=tag_name&value=input&index=0&attribute_name=class</code>
                                         <br/>
 
 <pre>
