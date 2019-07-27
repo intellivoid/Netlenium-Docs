@@ -22,18 +22,16 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">Root Endpoint</h3>
-                                    </div>
-                                    <div class="panel-body">
-
-                                        <p>
+                                        <br/>
+                                        <p class="panel-subtitle">
                                             The root endpoint <code>/</code> will return details about
                                             the Netlenium Server or return an error if you lack authentication.
-                                            Both <span class="label label-success">GET</span> or
-                                            <span class="label label-danger">POST</span> request methods are
-                                            allowed
                                         </p>
-                                        <br/>
-
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
                                         <h4>Parameters</h4>
                                         <table class="table table-hover table-responsive">
                                             <thead>
@@ -92,6 +90,11 @@
 }
 </pre>
 
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
