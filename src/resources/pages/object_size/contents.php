@@ -5,7 +5,7 @@
 <html lang="en">
 
     <head>
-        <title>Netlenium - Location Object</title>
+        <title>Netlenium - Size Object</title>
         <?PHP HTML::importSection('header'); ?>
     </head>
 
@@ -21,10 +21,10 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Location Object</h3>
+                                        <h3 class="panel-title">Size Object</h3>
                                         <br/>
                                         <p class="panel-subtitle">
-                                            This object represents a location in the current view.
+                                            This object represents the size of the element.
                                         </p>
                                         <div class="right">
                                             <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
@@ -34,8 +34,8 @@
                                         <h4>Example Structure</h4>
 <pre>
 {
-    "X":1664,
-    "Y":19
+    "Height":0,
+    "Width":0
 }
 </pre>
                                         <br/>
@@ -50,14 +50,14 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>X</td>
+                                                    <td>Height</td>
                                                     <td>Integer</td>
-                                                    <td>X coordinates</td>
+                                                    <td>The height of the element</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Y</td>
+                                                    <td>Width</td>
                                                     <td>Integer</td>
-                                                    <td>Y coordinates</td>
+                                                    <td>The width of the element</td>
                                                 </tr>
                                             </tbody>
                                         </table>

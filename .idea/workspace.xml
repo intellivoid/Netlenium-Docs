@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9ca04f6-43b8-4710-af98-4e9231b4d9ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/resources/pages/object_location/contents.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/pages/object_size/contents.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/pages/object_window/contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/pages/object_window/contents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/pages/object_location/contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/pages/object_location/contents.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +26,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/resources/pages/object_location/contents.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="28" column="77" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
+            <state relative-caret-position="272">
+              <caret line="31" column="42" selection-end-line="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resources/pages/object_size/contents.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -73,6 +82,7 @@
         <option value="$PROJECT_DIR$/src/resources/pages/api_actions/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/api_window_handler/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/object_window/contents.php" />
+        <option value="$PROJECT_DIR$/src/resources/pages/object_size/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/object_location/contents.php" />
       </list>
     </option>
@@ -127,6 +137,14 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="object_location" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Netlenium Docs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Netlenium-Docs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="object_size" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Netlenium Docs" type="b2602c69:ProjectViewProjectNode" />
@@ -191,12 +209,12 @@
       <workItem from="1563996856627" duration="5532000" />
       <workItem from="1564073766527" duration="2852000" />
       <workItem from="1564161061656" duration="7453000" />
-      <workItem from="1564238871423" duration="5040000" />
+      <workItem from="1564238871423" duration="5265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38919000" />
+    <option name="totallyTimeSpent" value="39144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -340,10 +358,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/pages/object_size/contents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/pages/object_location/contents.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="77" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
+        <state relative-caret-position="272">
+          <caret line="31" column="42" selection-end-line="84" />
         </state>
       </provider>
     </entry>
