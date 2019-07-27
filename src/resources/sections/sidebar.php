@@ -59,12 +59,16 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="/" class="">
+                <li><a href="https://github.com/intellivoid/Netlenium-Public/issues/new" target="_blank">
                         <i class="lnr lnr-bug"></i> <span>Bug Report</span>
                     </a>
                 </li>
-                <li><a href="/" class="">
-                        <i class="lnr lnr-bubble"></i> <span>Support</span>
+                <li><a href="https://intellivoid.info/contact" target="_blank">
+                        <i class="lnr lnr-envelope"></i> <span>Support</span>
+                    </a>
+                </li>
+                <li><a href="https://t.me/Intellivoid" target="_blank">
+                        <i class="lnr lnr-bubble"></i> <span>Community</span>
                     </a>
                 </li>
             </ul>

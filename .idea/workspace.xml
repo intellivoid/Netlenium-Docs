@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9ca04f6-43b8-4710-af98-4e9231b4d9ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/resources/pages/object_session/contents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/pages/api_admin/contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/pages/api_admin/contents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/sections/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sections/sidebar.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,11 +57,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/resources/pages/object_session/contents.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="113" column="111" selection-start-line="113" selection-start-column="53" selection-end-line="113" selection-end-column="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/resources/sections/sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="241">
-              <caret line="90" column="111" selection-start-line="90" selection-start-column="111" selection-end-line="90" selection-end-column="111" />
+              <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -106,7 +114,6 @@
         <option value="$PROJECT_DIR$/src/resources/sections/navigation.php" />
         <option value="$PROJECT_DIR$/src/resources/sections/footer.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/index/contents.php" />
-        <option value="$PROJECT_DIR$/src/resources/sections/sidebar.php" />
         <option value="$PROJECT_DIR$/src/resources/markdown/api_usage_root/en.md" />
         <option value="$PROJECT_DIR$/src/resources/sections/navbar.php" />
         <option value="$PROJECT_DIR$/src/resources/sections/header.php" />
@@ -124,6 +131,7 @@
         <option value="$PROJECT_DIR$/src/resources/pages/object_proxy/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/api_admin/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/object_session/contents.php" />
+        <option value="$PROJECT_DIR$/src/resources/sections/sidebar.php" />
       </list>
     </option>
   </component>
@@ -162,53 +170,6 @@
               <item name="Netlenium-Docs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Netlenium Docs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Netlenium-Docs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Netlenium Docs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Netlenium-Docs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="api_admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Netlenium Docs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Netlenium-Docs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="object_element" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Netlenium Docs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Netlenium-Docs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="object_proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Netlenium Docs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Netlenium-Docs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="object_server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Netlenium Docs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Netlenium-Docs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="object_session" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Netlenium Docs" type="b2602c69:ProjectViewProjectNode" />
@@ -265,12 +226,12 @@
       <workItem from="1563996856627" duration="5532000" />
       <workItem from="1564073766527" duration="2852000" />
       <workItem from="1564161061656" duration="7453000" />
-      <workItem from="1564238871423" duration="8317000" />
+      <workItem from="1564238871423" duration="8519000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42196000" />
+    <option name="totallyTimeSpent" value="42398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -324,13 +285,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="105" column="48" lean-forward="true" selection-start-line="88" selection-start-column="40" selection-end-line="105" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/sections/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -451,8 +405,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/pages/object_session/contents.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="113" column="111" selection-start-line="113" selection-start-column="53" selection-end-line="113" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/sections/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
-          <caret line="90" column="111" selection-start-line="90" selection-start-column="111" selection-end-line="90" selection-end-column="111" />
+          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
         </state>
       </provider>
     </entry>
