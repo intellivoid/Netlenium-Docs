@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a9ca04f6-43b8-4710-af98-4e9231b4d9ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/resources/pages/api_sessions/contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/pages/api_sessions/contents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/sections/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sections/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/resources/pages/api_sessions/contents.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1659">
-              <caret line="191" column="89" selection-start-line="191" selection-start-column="89" selection-end-line="191" selection-end-column="89" />
+            <state relative-caret-position="513">
+              <caret line="243" column="42" selection-start-line="243" selection-start-column="42" selection-end-line="243" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -182,12 +181,12 @@
       <workItem from="1563923489216" duration="593000" />
       <workItem from="1563996856627" duration="5532000" />
       <workItem from="1564073766527" duration="2852000" />
-      <workItem from="1564161061656" duration="3201000" />
+      <workItem from="1564161061656" duration="3243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29627000" />
+    <option name="totallyTimeSpent" value="29669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -305,8 +304,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/pages/api_sessions/contents.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="191" column="89" selection-start-line="191" selection-start-column="89" selection-end-line="191" selection-end-column="89" />
+        <state relative-caret-position="513">
+          <caret line="243" column="42" selection-start-line="243" selection-start-column="42" selection-end-line="243" selection-end-column="42" />
         </state>
       </provider>
     </entry>

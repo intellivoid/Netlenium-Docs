@@ -178,16 +178,21 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Close Session</h3>
-                                    </div>
-                                    <div class="panel-body">
-
-                                        <p>
+                                        <h3 class="panel-title">
+                                            Close Session
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
                                             <code>/sessions/close</code> allows you to close an existing session, this
                                             closes the browser and web driver.
                                         </p>
-                                        <br/>
-
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
                                         <h4>Parameters</h4>
                                         <table class="table table-hover table-responsive">
                                             <thead>
@@ -231,6 +236,11 @@
 }
 </pre>
 
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
