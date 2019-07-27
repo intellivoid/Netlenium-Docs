@@ -107,7 +107,7 @@
          "ID":"5VMA3GOM2J2S8M71Z7ZCENQLT1WICSW1",
          "Created":"7/27/2019 12:28:21 AM",
          "LastActivity":"7/27/2019 12:28:21 AM",
-         "Driver":"Chrome",
+         "Driver":"chrome",
          "Headless":true,
          "ProxyConfiguration":{
             "Enabled":false,
