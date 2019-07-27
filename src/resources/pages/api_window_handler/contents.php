@@ -5,7 +5,7 @@
 <html lang="en">
 
     <head>
-        <title>Netlenium - API Usage '/actions'</title>
+        <title>Netlenium - API Usage '/window_handler'</title>
         <?PHP HTML::importSection('header'); ?>
     </head>
 
@@ -21,11 +21,12 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Actions Endpoint</h3>
+                                        <h3 class="panel-title">Window Handler Endpoint</h3>
                                         <br/>
                                         <p class="panel-subtitle">
-                                            The actions endpoint <code>/actions</code> allows a client to invoke
-                                            actions to an existing session.
+                                            The Window Handler endpoint <code>/window_handler</code> allows you to
+                                            view and manage the current windows that are currently active (This
+                                            includes tabs and popups)
                                         </p>
                                         <div class="right">
                                             <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
@@ -55,7 +56,6 @@
                                             </tbody>
                                         </table>
 
-                                        <hr/>
                                         <h4>Authentication Required Response</h4>
                                         <br/>
 
@@ -74,154 +74,10 @@
 {
    "Status":false,
    "ResponseCode":404,
-    "Message":"The session 'SESSION_ID' was not found"
+   "Message":"The session 'SESSION_ID' was not found"
 }
 </pre>
-                                    </div>
-                                    <div class="panel-footer">
-                                        <h5>
-                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">
-                                            Get Elements
-                                            <span class="label label-success">GET</span>
-                                            <span class="label label-danger">POST</span>
-                                        </h3>
-                                        <br/>
-                                        <p class="panel-subtitle">
-                                            <code>/actions/get_elements</code> Fetches the elements that are in the DOM
-                                        </p>
-                                        <div class="right">
-                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>Parameters</h4>
-                                        <table class="table table-hover table-responsive" style="display: block;">
-                                            <thead>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>Required</th>
-                                                    <th>Description</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>by</td>
-                                                    <td>True</td>
-                                                    <td>
-                                                        Specify how you want to search for elements, the possible options
-                                                        are <code>class_name</code>, <code>css_selector</code>,
-                                                        <code>id</code>, <code>name</code>, <code>tag_name</code>,
-                                                        <code>xpath</code>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>value</td>
-                                                    <td>True</td>
-                                                    <td>
-                                                        The value to search for corresponding to the <code>by</code>
-                                                        paramerter
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
 
-                                        <hr/>
-                                        <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://localhost:6410/actions/get_elements?session_id=ExampleID&by=tag_name&value=a</code>
-                                        <br/>
-
-<pre>
-{
-   "Elements":[
-      {
-         "Enabled":true,
-         "IsSelected":false,
-         "ElementLocation":{
-            "X":1615,
-            "Y":19
-         },
-         "ElementSize":{
-            "Width":34,
-            "Height":24
-         },
-         "TagName":"a",
-         "InnerText":"Gmail",
-         "InnerHtml":"Gmail"
-      },
-      {
-         "Enabled":true,
-         "IsSelected":false,
-         "ElementLocation":{
-            "X":1664,
-            "Y":19
-         },
-         "ElementSize":{
-            "Width":57,
-            "Height":24
-         },
-         "TagName":"a",
-         "InnerText":"Images",
-         "InnerHtml":"Images"
-      }
-   ],
-   "Status":true,
-   "ResponseCode":200
-}
-</pre>
-                                        <p>
-                                            This response will return an array of <a href="/object_element">Web Elements</a>.
-                                            if there are no results, then the array will be empty.
-                                        </p>
-                                    </div>
-                                    <div class="panel-footer">
-                                        <h5>
-                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">
-                                            Close Window
-                                            <span class="label label-success">GET</span>
-                                            <span class="label label-danger">POST</span>
-                                        </h3>
-                                        <br/>
-                                        <p class="panel-subtitle">
-                                            <code>/actions/close</code> closes the current window/tab that the
-                                            session is currently focused on and switches back to another active
-                                            window/tab. To list active windows or switch to another see
-                                            <a href="/api_window_handler">/window_handler</a>
-                                        </p>
-                                        <div class="right">
-                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://localhost:6410/actions/close?session_id=ExampleID</code>
-                                        <br/>
-
-<pre>
-{
-   "Status":true,
-   "ResponseCode":200
-}
-</pre>
                                     </div>
                                     <div class="panel-footer">
                                         <h5>
@@ -232,70 +88,40 @@
                             </div>
                         </div>
 
+
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            Execute Javascript
+                                            Current Window
                                             <span class="label label-success">GET</span>
                                             <span class="label label-danger">POST</span>
                                         </h3>
                                         <br/>
                                         <p class="panel-subtitle">
-                                            <code>/actions/execute_javascript</code> takes your javascript code and
-                                            executes it in the current window, if your code has a return statement then
-                                            the results will also be returned
+                                            <code>/web_element/current_window</code> Returns a
+                                            <a href="/object_window">Window</a> object which represents the current
+                                            window that's currently selected and what it's attributes are.
                                         </p>
                                         <div class="right">
                                             <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
                                         </div>
                                     </div>
                                     <div class="panel-body">
-                                        <h4>Parameters</h4>
-                                        <table class="table table-hover table-responsive" style="display: block;">
-                                            <thead>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>Required</th>
-                                                    <th>Description</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>code</td>
-                                                    <td>True</td>
-                                                    <td>
-                                                        The Javascript code you wish to execute, if it contains a return
-                                                        statement then the results will be returned in the response
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-                                        <hr/>
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://localhost:6410/actions/execute_javascript?session_id=ExampleID&code=return%20%27test%27;</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/window_handler/current_window?session_id=ExampleID</code>
                                         <br/>
 
 <pre>
 {
    "Status":true,
    "ResponseCode":200,
-   "Output": "test"
-}
-</pre>
-
-                                        <hr/>
-                                        <h4>Example Error Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://localhost:6410/actions/execute_javascript?session_id=ExampleID&code=return%20%27%27%27</code>
-                                        <br/>
-
-<pre>
-{
-   "Status":false,
-   "ResponseCode":500,
-   "Error": "SyntaxError: Invalid or unexpected token"
+   "CurrentWindow":{
+      "ID":"CDwindow-F5BD5EA1BAE609B0FBA0ACE2FF91D0DD",
+      "Url":"https://www.google.com/",
+      "Title":"Google"
+   }
 }
 </pre>
                                     </div>
@@ -307,6 +133,119 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            List Windows
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
+                                            <code>/window_handler/list_windows</code> returns an array of Window ID's.
+                                            Each window ID Represents the window, tab or popup that's currently opened.
+                                        </p>
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>Example Success Response</h4>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/window_handler/list_windows?session_id=ExampleID</code>
+                                        <br/>
+
+<pre>
+{
+   "Status":true,
+   "ResponseCode":200,
+   "WindowHandles":[
+      "CDwindow-F5BD5EA1BAE609B0FBA0ACE2FF91D0DD"
+   ]
+}
+</pre>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            Switch to Window
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
+                                            <code>/window_handler/switch_to</code> switches to the ID of the window, tab
+                                            or popup. The current window will be set to whatever you switched to.
+                                        </p>
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>Parameters</h4>
+                                        <table class="table table-hover table-responsive">
+                                            <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Required</th>
+                                                <th>Description</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>id</td>
+                                                <td>True</td>
+                                                <td>The ID of the window to switch to</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <h4>Example Success Response</h4>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/window_handler/switch_to?session_id=ExampleID&id=ExampleWindowID</code>
+                                        <br/>
+
+<pre>
+{
+   "Status":true,
+   "ResponseCode":200
+}
+</pre>
+                                        <hr/>
+                                        <h4>Window Handler Not Found Response</h4>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/window_handler/switch_to?session_id=ExampleID&id=ExampleWindowID123</code>
+                                        <br/>
+
+<pre>
+{
+   "Status":false,
+   "ResponseCode":404,
+   "Message":"The window handler was not found"
+}
+</pre>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
