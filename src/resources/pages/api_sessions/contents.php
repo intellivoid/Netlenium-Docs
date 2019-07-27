@@ -83,7 +83,7 @@
                                         <br/>
                                         <p class="panel-subtitle">
                                             <code>/sessions/create</code> allows you to create a new session, you can
-                                            provide a optional proxy configuration or specify the target browser you
+                                            provide a optional proxy configuration or specify the target driver you
                                             want to use. When you create a new session you will be given a Session ID
                                             which is required for many other methods
                                         </p>
@@ -103,12 +103,12 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>target_browser</td>
+                                                    <td>target_driver</td>
                                                     <td>False</td>
                                                     <td>
-                                                        Specify the target browser to use, the available options are
+                                                        Specify the target driver to use, the available options are
                                                         <code>chrome</code>, <code>firefox</code> and <code>opera</code>. If
-                                                        no option is provided, the server will use the default browser which
+                                                        no option is provided, the server will use the default driver which
                                                         is recommended.
                                                     </td>
                                                 </tr>
@@ -154,7 +154,7 @@
 
                                         <hr/>
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://localhost:6410/sessions/create?target_browser=chrome</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/sessions/create?target_driver=chrome</code>
                                         <br/>
 
 <pre>
@@ -186,7 +186,7 @@
                                         <br/>
                                         <p class="panel-subtitle">
                                             <code>/sessions/close</code> allows you to close an existing session, this
-                                            closes the browser and web driver.
+                                            closes the web driver and web browser process.
                                         </p>
                                         <div class="right">
                                             <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
