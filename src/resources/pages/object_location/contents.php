@@ -5,7 +5,7 @@
 <html lang="en">
 
     <head>
-        <title>Netlenium - Window Object</title>
+        <title>Netlenium - Location Object</title>
         <?PHP HTML::importSection('header'); ?>
     </head>
 
@@ -21,10 +21,12 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Window Object</h3>
+                                        <h3 class="panel-title">Location Object</h3>
                                         <br/>
                                         <p class="panel-subtitle">
-                                            This window object represents the current window that's currently active.
+                                            This object represents a location in the current view, if X and Y represents
+                                            0, this does not necessarily mean that they are at that exact location but
+                                            rather they aren't in view at all
                                         </p>
                                         <div class="right">
                                             <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
@@ -34,9 +36,8 @@
                                         <h4>Example Structure</h4>
 <pre>
 {
-    "ID":"CDwindow-F5BD5EA1BAE609B0FBA0ACE2FF91D0DD",
-    "Url":"https://www.google.com/",
-    "Title":"Google"
+    "X":1664,
+    "Y":19
 }
 </pre>
                                         <br/>
@@ -51,19 +52,14 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>ID</td>
-                                                    <td>String</td>
-                                                    <td>The ID of the Window</td>
+                                                    <td>X</td>
+                                                    <td>Integer</td>
+                                                    <td>X coordinates</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Url</td>
-                                                    <td>String</td>
-                                                    <td>The URL that the Window is currently on</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Title</td>
-                                                    <td>String</td>
-                                                    <td>The title of the document that's currently loaded</td>
+                                                    <td>Y</td>
+                                                    <td>Integer</td>
+                                                    <td>Y coordinates</td>
                                                 </tr>
                                             </tbody>
                                         </table>
