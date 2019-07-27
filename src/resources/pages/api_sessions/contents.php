@@ -22,16 +22,16 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">Sessions Endpoint</h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
+                                            The sessions endpoint <code>/sessions</code> allows clients to create a
+                                            new session or close an existing one.
+                                        </p>
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
                                     </div>
                                     <div class="panel-body">
-
-                                        <p>
-                                            The sessions endpoint <code>/sessions</code> allows clients to create a
-                                            new session or close an existing one. Both <span class="label label-success">GET</span>
-                                            or <span class="label label-danger">POST</span> request methods are allowed
-                                        </p>
-                                        <br/>
-
                                         <h4>Parameters</h4>
                                         <table class="table table-hover table-responsive">
                                             <thead>
@@ -63,6 +63,11 @@
 </pre>
 
                                     </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -70,18 +75,23 @@
                             <div class="col-md-12">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">Create a new Session</h3>
-                                    </div>
-                                    <div class="panel-body">
-
-                                        <p>
+                                        <h3 class="panel-title">
+                                            Create a new Session
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
                                             <code>/sessions/create</code> allows you to create a new session, you can
                                             provide a optional proxy configuration or specify the target browser you
                                             want to use. When you create a new session you will be given a Session ID
                                             which is required for many other methods
                                         </p>
-                                        <br/>
-
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
                                         <h4>Parameters</h4>
                                         <table class="table table-hover table-responsive" style="display: block;">
                                             <thead>
@@ -156,6 +166,11 @@
 </pre>
 
                                     </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +189,7 @@
                                         <br/>
 
                                         <h4>Parameters</h4>
-                                        <table class="table table-hover table-responsive" style="display: block;">
+                                        <table class="table table-hover table-responsive">
                                             <thead>
                                                 <tr>
                                                     <th>Name</th>
