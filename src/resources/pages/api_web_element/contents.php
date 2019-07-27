@@ -22,15 +22,16 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">Web Element Endpoint</h3>
-                                    </div>
-                                    <div class="panel-body">
-
-                                        <p>
+                                        <br/>
+                                        <p class="panel-subtitle">
                                             The web element endpoint <code>/web_element</code> invokes actions to a
                                             specific element that is in the DOM.
                                         </p>
-                                        <br/>
-
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
                                         <h4>Parameters</h4>
                                         <table class="table table-hover table-responsive">
                                             <thead>
@@ -111,6 +112,11 @@
    "Message":"The element was not found"
 }
 </pre>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
