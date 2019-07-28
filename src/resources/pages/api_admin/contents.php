@@ -58,9 +58,10 @@
 
 <pre>
 {
-   "Message":"Unauthorized Request",
    "Status":false,
-   "ResponseCode":401
+   "ResponseCode":401,
+   "ErrorCode":109,
+   "Message":"Unauthorized Request"
 }
 </pre>
                                     </div>
@@ -102,6 +103,7 @@
 {
    "Status":true,
    "ResponseCode":200,
+   "ErrorCode":0,
    "Sessions":[
       {
          "ID":"5VMA3GOM2J2S8M71Z7ZCENQLT1WICSW1",
