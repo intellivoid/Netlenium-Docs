@@ -61,9 +61,10 @@
 
 <pre>
 {
-   "Message":"Unauthorized Request",
    "Status":false,
-   "ResponseCode":401
+   "ResponseCode":401,
+   "ErrorCode":109,
+   "Message":"Unauthorized Request"
 }
 </pre>
                                         <hr/>
@@ -74,7 +75,8 @@
 {
    "Status":false,
    "ResponseCode":404,
-   "Message":"The session 'SESSION_ID' was not found"
+   "ErrorCode":108,
+   "Message":"The session 'ExampleID' was not found"
 }
 </pre>
 
@@ -117,6 +119,7 @@
 {
    "Status":true,
    "ResponseCode":200,
+   "ErrorCode":0,
    "CurrentWindow":{
       "ID":"CDwindow-F5BD5EA1BAE609B0FBA0ACE2FF91D0DD",
       "Url":"https://www.google.com/",
@@ -162,6 +165,7 @@
 {
    "Status":true,
    "ResponseCode":200,
+   "ErrorCode":0,
    "WindowHandles":[
       "CDwindow-F5BD5EA1BAE609B0FBA0ACE2FF91D0DD"
    ]
@@ -221,7 +225,8 @@
 <pre>
 {
    "Status":true,
-   "ResponseCode":200
+   "ResponseCode":200,
+   "ErrorCode":0
 }
 </pre>
                                         <hr/>
@@ -233,6 +238,7 @@
 {
    "Status":false,
    "ResponseCode":404,
+   "ErrorCode":106,
    "Message":"The window handler was not found"
 }
 </pre>
