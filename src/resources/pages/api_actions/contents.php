@@ -61,9 +61,10 @@
 
 <pre>
 {
-   "Message":"Unauthorized Request",
    "Status":false,
-   "ResponseCode":401
+   "ResponseCode":401,
+   "ErrorCode":109,
+   "Message":"Unauthorized Request"
 }
 </pre>
                                         <hr/>
@@ -74,7 +75,8 @@
 {
    "Status":false,
    "ResponseCode":404,
-    "Message":"The session 'SESSION_ID' was not found"
+   "ErrorCode":108,
+   "Message":"The session 'SESSION_ID' was not found"
 }
 </pre>
                                     </div>
@@ -142,6 +144,9 @@
 
 <pre>
 {
+   "Status":true,
+   "ResponseCode":200,
+   "ErrorCode":0,
    "Elements":[
       {
          "Enabled":true,
@@ -173,9 +178,7 @@
          "InnerText":"Images",
          "InnerHtml":"Images"
       }
-   ],
-   "Status":true,
-   "ResponseCode":200
+   ]
 }
 </pre>
                                         <p>
@@ -219,7 +222,8 @@
 <pre>
 {
    "Status":true,
-   "ResponseCode":200
+   "ResponseCode":200,
+   "ErrorCode":0
 }
 </pre>
                                     </div>
@@ -282,6 +286,7 @@
 {
    "Status":true,
    "ResponseCode":200,
+   "ErrorCode":0,
    "Output": "test"
 }
 </pre>
@@ -295,6 +300,7 @@
 {
    "Status":false,
    "ResponseCode":500,
+   "ErrorCode":112,
    "Error": "SyntaxError: Invalid or unexpected token"
 }
 </pre>

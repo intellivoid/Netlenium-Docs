@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9ca04f6-43b8-4710-af98-4e9231b4d9ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/resources/pages/error_codes/contents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/sections/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/sections/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/pages/api_actions/contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/pages/api_actions/contents.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,11 +66,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/resources/pages/error_codes/contents.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="411">
               <caret line="141" column="81" selection-start-line="141" selection-start-column="81" selection-end-line="141" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/resources/pages/api_actions/contents.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="302" column="19" selection-start-line="302" selection-start-column="19" selection-end-line="302" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -94,15 +101,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="355">
               <caret line="191" column="82" selection-start-line="191" selection-start-column="82" selection-end-line="191" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/pages/object_size/contents.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -134,7 +132,6 @@
         <option value="$PROJECT_DIR$/src/resources/pages/api_navigation/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/api_root/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/api_web_element/contents.php" />
-        <option value="$PROJECT_DIR$/src/resources/pages/api_actions/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/api_window_handler/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/object_window/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/object_size/contents.php" />
@@ -148,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/resources/pages/api_sessions/contents.php" />
         <option value="$PROJECT_DIR$/src/resources/sections/sidebar.php" />
         <option value="$PROJECT_DIR$/src/resources/pages/error_codes/contents.php" />
+        <option value="$PROJECT_DIR$/src/resources/pages/api_actions/contents.php" />
       </list>
     </option>
   </component>
@@ -200,7 +198,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="error_codes" type="462c0819:PsiDirectoryNode" />
+              <item name="api_actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Netlenium Docs" type="b2602c69:ProjectViewProjectNode" />
@@ -257,12 +255,12 @@
       <workItem from="1563996856627" duration="5532000" />
       <workItem from="1564073766527" duration="2852000" />
       <workItem from="1564161061656" duration="7453000" />
-      <workItem from="1564238871423" duration="12968000" />
+      <workItem from="1564238871423" duration="13390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46847000" />
+    <option name="totallyTimeSpent" value="47269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -351,13 +349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" selection-start-line="18" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/pages/api_actions/contents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="205" column="81" lean-forward="true" selection-start-line="205" selection-start-column="81" selection-end-line="205" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -452,6 +443,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
           <caret line="141" column="81" selection-start-line="141" selection-start-column="81" selection-end-line="141" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/pages/api_actions/contents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="302" column="19" selection-start-line="302" selection-start-column="19" selection-end-line="302" selection-end-column="19" />
         </state>
       </provider>
     </entry>
