@@ -60,9 +60,10 @@
 
 <pre>
 {
-   "Message":"Unauthorized Request",
    "Status":false,
-   "ResponseCode":401
+   "ResponseCode":401,
+   "ErrorCode":109,
+   "Message":"Unauthorized Request"
 }
 </pre>
                                         <hr/>
@@ -73,7 +74,8 @@
 {
    "Status":false,
    "ResponseCode":404,
-    "Message":"The session 'SESSION_ID' was not found"
+   "ErrorCode":108,
+   "Message":"The session 'SESSION_ID' was not found"
 }
 </pre>
                                     </div>
@@ -130,7 +132,8 @@
 <pre>
 {
    "Status":true,
-   "ResponseCode":200
+   "ResponseCode":200,
+   "ErrorCode":0
 }
 </pre>
 
@@ -168,7 +171,8 @@
 <pre>
 {
    "Status":true,
-   "ResponseCode":200
+   "ResponseCode":200,
+   "ErrorCode":0
 }
 </pre>
                                     </div>
@@ -205,7 +209,8 @@
 <pre>
 {
    "Status":true,
-   "ResponseCode":200
+   "ResponseCode":200,
+   "ErrorCode":0
 }
 </pre>
                                     </div>
@@ -242,7 +247,8 @@
 <pre>
 {
    "Status":true,
-   "ResponseCode":200
+   "ResponseCode":200,
+   "ErrorCode":0
 }
 </pre>
                                     </div>
