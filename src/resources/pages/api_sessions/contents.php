@@ -56,9 +56,10 @@
 
 <pre>
 {
-   "Message":"Unauthorized Request",
    "Status":false,
-   "ResponseCode":401
+   "ResponseCode":401,
+   "ErrorCode":109,
+   "Message":"Unauthorized Request"
 }
 </pre>
 
@@ -161,7 +162,8 @@
 {
    "Status":true,
    "ResponseCode":200,
-   "SessionId":"L14KII5WLAAJ29GQOJJIBX6LT2S5MPX1"
+   "ErrorCode":0,
+   "SessionId":"ExampleID"
 }
 </pre>
 
@@ -213,26 +215,28 @@
 
                                         <hr/>
                                         <h4>Example Success Response</h4>
-                                        <span class="label label-success">GET</span> <code>http://localhost:6410/sessions/close?session_id=L14KII5WLAAJ29GQOJJIBX6LT2S5MPX1</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/sessions/close?session_id=ExampleID</code>
                                         <br/>
 
 <pre>
 {
    "Status":true,
-   "ResponseCode":200
+   "ResponseCode":200,
+   "ErrorCode":0
 }
 </pre>
 
                                         <hr/>
                                         <h4>Response given if the session was not found</h4>
-                                        <span class="label label-success">GET</span> <code>http://localhost:6410/sessions/close?session_id=VFHXLB6O52QWH3UAZU089TIFDSUWL41L</code>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/sessions/close?session_id=ExampleID</code>
                                         <br/>
 
 <pre>
 {
-   "Message":"The session 'VFHXLB6O52QWH3UAZU089TIFDSUWL41L' was not found",
    "Status":false,
-   "ResponseCode":404
+   "ResponseCode":404,
+   "ErrorCode":108,
+   "Message":"The session 'ExampleID' was not found"
 }
 </pre>
 
