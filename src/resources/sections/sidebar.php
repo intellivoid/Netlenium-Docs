@@ -59,6 +59,10 @@
                         </ul>
                     </div>
                 </li>
+                <li><a href="/error_codes" target="_blank">
+                        <i class="lnr lnr-flag"></i> <span>Error Codes</span>
+                    </a>
+                </li>
                 <li><a href="https://github.com/intellivoid/Netlenium-Public/issues/new" target="_blank">
                         <i class="lnr lnr-bug"></i> <span>Bug Report</span>
                     </a>
