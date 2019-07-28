@@ -204,6 +204,64 @@
                             </div>
                         </div>
 
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            Send Keys
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
+                                            <code>/web_element/send_keys</code> simulates typing into the element
+                                        </p>
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>Parameters</h4>
+                                        <table class="table table-hover table-responsive">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Required</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>input</td>
+                                                    <td>True</td>
+                                                    <td>The input to send</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <h4>Example Success Response</h4>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/web_element/send_keys?session_id=ExampleID&by=name&value=username&input=HelloWorld</code>
+                                        <br/>
+
+<pre>
+{
+   "Status":true,
+   "ResponseCode":200,
+   "ErrorCode"0
+}
+</pre>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="panel">
