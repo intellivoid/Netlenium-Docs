@@ -307,6 +307,45 @@
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
+                                            Submit
+                                            <span class="label label-success">GET</span>
+                                            <span class="label label-danger">POST</span>
+                                        </h3>
+                                        <br/>
+                                        <p class="panel-subtitle">
+                                            <code>/web_element/submit</code> submits the element to the remote server
+                                        </p>
+                                        <div class="right">
+                                            <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>Example Success Response</h4>
+                                        <span class="label label-success">GET</span> <code>http://localhost:6410/web_element/submit?session_id=ExampleID&by=name&value=input_element</code>
+                                        <br/>
+<pre>
+{
+   "Status":true,
+   "ResponseCode":200,
+   "ErrorCode":0
+}
+</pre>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h5>
+                                            <a href="https://github.com/intellivoid/Netlenium-Public/issues/new">Report mistake / suggest improvement</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
                                             Get Attribute
                                             <span class="label label-success">GET</span>
                                             <span class="label label-danger">POST</span>
