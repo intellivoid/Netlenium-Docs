@@ -59,6 +59,7 @@
 {
    "Status":true,
    "ResponseCode":200,
+   "ErrorCode":0,
    "ServerDetails":{
       "ServerName":"Netlenium",
       "ServerVersion":"1.0.0.0",
@@ -84,9 +85,10 @@
 
 <pre>
 {
-   "Message":"Unauthorized Request",
    "Status":false,
-   "ResponseCode":401
+   "ResponseCode":401,
+   "ErrorCode":109,
+   "Message":"Unauthorized Request"
 }
 </pre>
 
